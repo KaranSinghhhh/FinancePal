@@ -48,15 +48,17 @@ class CompanyInfo(commands.Cog):
         
         try:
             response = requests.get(api_url_name, headers={'X-Api-Key': api_key})
+            print(f"API Response (name): {response.json()}")  # Debugging line
             if response.status_code == 200 and response.json():
                 data = response.json()
                 if 'image' in data[0]:
                     return data[0]['image']
 
             response_ticker = requests.get(api_url_ticker, headers={'X-Api-Key': api_key})
+            print(f"API Response (ticker): {response_ticker.json()}")  # Debugging line
             if response_ticker.status_code == 200 and response_ticker.json():
                 data_ticker = response_ticker.json()
-                if 'image' in data_ticker[0]:
+                if data_ticker and 'image' in data_ticker[0] and symbol.lower() == data_ticker[0]['ticker'].lower():
                     return data_ticker[0]['image']
 
             print(f"No image found for symbol {symbol}.")
@@ -68,7 +70,7 @@ class CompanyInfo(commands.Cog):
 
 
     def get_company_name_from_ticker(self, symbol):
-        api_key = os.getenv('ALPHA_VANTAGE_API_KEY')  # Alpha Vantage API key
+        api_key = os.getenv('ALPHA_VANTAGE_API_KEY') 
         endpoint = f'https://www.alphavantage.co/query'
         params = {
             'function': 'SYMBOL_SEARCH',
@@ -169,10 +171,11 @@ class CompanyInfo(commands.Cog):
         return data.get('annualReports', [])
 
     class Dropdown(nextcord.ui.Select):
-        def __init__(self, annual_reports, interaction: Interaction, cog):
+        def __init__(self, annual_reports, interaction: Interaction, cog, logo_url):
             self.annual_reports = annual_reports
             self.interaction = interaction
             self.cog = cog
+            self.logo_url = logo_url
             options = [nextcord.SelectOption(label=report['fiscalDateEnding']) for report in annual_reports]
             super().__init__(placeholder="Choose a Fiscal Date", min_values=1, max_values=1, options=options)
 
@@ -182,44 +185,30 @@ class CompanyInfo(commands.Cog):
             selected_report = next((report for report in self.annual_reports if report['fiscalDateEnding'] == selected_date), None)
 
             if selected_report:
+                print(f"Selected report symbol: {selected_report.get('symbol')}")
+                
                 # Fetch the logo URL
-                symbol = selected_report.get('symbol', '')  # Replace 'symbol' with the correct key if different
+                symbol = selected_report.get('symbol', '')
                 logo_url = self.cog.fetch_logo_image_url(symbol)
 
+                
+
                 # Create paginated embeds
-                paginated_embeds = self.cog.create_paginated_embeds_for_report(selected_report, symbol, logo_url)
+                paginated_embeds = self.cog.create_paginated_embeds_for_report(selected_report, selected_report.get('symbol', ''), self.logo_url)
                 view = PaginationView(paginated_embeds)
                 await interaction.response.edit_message(content="Here is the income statement:", embed=paginated_embeds[0], view=view)
             else:
                 await interaction.response.send_message("No data available for the selected fiscal date.", ephemeral=True)
 
 
-        '''
-        async def callback(self, interaction: Interaction):
-            selected_date = self.values[0]
-            for report in self.annual_reports:
-                if report['fiscalDateEnding'] == selected_date:
-                    embed = nextcord.Embed(title=f"Income Statement for {selected_date}", color=0x4dff4d)
-                    
-                    last_25_items = list(report.items())[-25:]
-                    
-                    for key, value in last_25_items:
-                        embed.add_field(name=key.capitalize(), value=value, inline=False)
-                    
-                 
-                    await interaction.user.send(embed=embed)
-                    await interaction.response.send_message(f"Income Statement information sent to your DMs.",)
-                    return
-
-            await self.interaction.followup.send("No data available for the selected fiscal date.")
-        '''
 
 
     class DropdownView(nextcord.ui.View):
-        def __init__(self, annual_reports, interaction: Interaction, cog):
+        def __init__(self, annual_reports, interaction: Interaction, cog, logo_url):
             super().__init__()
             self.cog = cog
-            self.add_item(CompanyInfo.Dropdown(annual_reports, interaction, cog))
+            self.logo_url = logo_url
+            self.add_item(CompanyInfo.Dropdown(annual_reports, interaction, cog, logo_url))
 
     
     def create_paginated_embeds_for_report(self, report, symbol, logo_url):
@@ -229,6 +218,8 @@ class CompanyInfo(commands.Cog):
 
         first_page_items = list(report.items())[:10]
         second_page_items = list(report.items())[10:20]
+        
+       
 
         first_page_embed = nextcord.Embed(title=f"Income Statement for {report['fiscalDateEnding']}", description="Page 1")
         for key, value in first_page_items:
@@ -245,6 +236,8 @@ class CompanyInfo(commands.Cog):
             embed.set_footer(text=f"Data provided by FinancePal Bot | {current_time}")
             embed.set_author(name="FinancePal", icon_url=finance_pal_url)
             embed.url = bloomberg_url
+            
+        print(f"Setting thumbnail to: {logo_url}")  # This line should just be for debugging, remove after confirming it works
 
         return [first_page_embed, second_page_embed]
         
@@ -252,48 +245,25 @@ class CompanyInfo(commands.Cog):
     @nextcord.slash_command(name="get-income-statement", description="Gets the income statement for a selected fiscal date", guild_ids=[int(os.getenv('TEST_SERVER_ID'))])
     async def the_income_statement(self, interaction: Interaction, symbol: str):
         annual_reports = await self.fetch_income_statement_data(symbol)
-       
+            
+        # Fetch the full company name from the symbol
+        company_name = self.get_company_name_from_ticker(symbol)
+            
+        # Fetch the logo using the full company name if available, otherwise use the symbol
+        logo_url = self.fetch_logo_image_url(company_name if company_name else symbol)
+        print(f"Fetched logo URL for {symbol} (company name: {company_name}): {logo_url}")  # Debugging line
+            
         if annual_reports:
-            view = self.DropdownView(annual_reports, interaction, self)
+        # Pass the logo_url to the DropdownView
+            view = self.DropdownView(annual_reports, interaction, self, logo_url)
             await interaction.response.send_message("Select a fiscal date:", view=view)
         else:
             await interaction.response.send_message("No income statement data available for this symbol.")
 
-        
-        
-        '''
-        if annual_reports:
+
+
             
-            # Creating paginated embeds for each annual report
-            nested_embeds = [self.create_paginated_embeds_for_report(report, symbol, logo_url) for report in annual_reports]
-            # Flattening the list of lists into a single list of embeds
-            embeds = [embed for sublist in nested_embeds for embed in sublist]
-            view = PaginationView(embeds)
-            await interaction.response.send_message(embed=embeds[0], view=view)  # Send the first embed
-        else:
-            await interaction.response.send_message("No income statement data available for this symbol.")
-        '''
-        
-    
-    
-    
-    '''
-    @nextcord.slash_command(name="get-income-statement", description="Gets the income statement for a selected fiscal date", guild_ids=[int(os.getenv('TEST_SERVER_ID'))])
-    async def the_income_statement(self, interaction: Interaction, symbol: str):
-        annual_reports = await self.fetch_income_statement_data(symbol)
-        if annual_reports:
-            
-            view = CompanyInfo.DropdownView(annual_reports, interaction)
-            await interaction.response.send_message("Select a fiscal date:", view=view)
-        else:
-            await interaction.response.send_message("No income statement data available for this symbol.")
-            
-            embeds = [self.create_paginated_embeds_for_report(report) for report in annual_reports]
-            view = PaginationView(embeds)
-            await interaction.response.send_message(embed=embeds[0][0], view=view)  # Send the first embed of the first report
-        else:
-            await interaction.response.send_message("No income statement data available for this symbol.")
-    '''
+ 
             
     async def get_cash_flow_data(self, symbol):
         url = f"https://www.alphavantage.co/query?function=CASH_FLOW&symbol={symbol}&apikey={os.getenv('ALPHA_VANTAGE_API_KEY')}"
