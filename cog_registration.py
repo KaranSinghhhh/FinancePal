@@ -10,5 +10,7 @@ COGS = [
     "cogs.StoringData",
     "cogs.Stock",
     "cogs.MarketNews",
-    "cogs.CompanyInfo"
+    "cogs.CompanyInfo",
+    "cogs.IncomeStatement",
+    
 ]
