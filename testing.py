@@ -7,7 +7,7 @@ API_KEY = os.getenv('ALPHA_VANTAGE_API_KEY') or 'your_api_key_here'
 
 
 def fetch_income_statement(symbol, api_key):
-    url = f'https://www.alphavantage.co/query?function=INCOME_STATEMENT&symbol={symbol}&apikey={api_key}'
+    url = f'https://www.alphavantage.co/query?function=CASH_FLOW&symbol={symbol}&apikey={api_key}'
     response = requests.get(url)
     if response.status_code == 200:
         return response.json()
@@ -18,7 +18,7 @@ def fetch_income_statement(symbol, api_key):
 
 data = fetch_income_statement('AAPL', API_KEY)
 if data:
-    with open('income_statement.json', 'w', encoding='utf-8') as f:
+    with open('cash_flow.json', 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=4)
 
     print("Data written to income_statement.json")
