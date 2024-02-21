@@ -45,3 +45,48 @@ class Dropdown(nextcord.ui.Select):
         selected_report = next((report for report in self.annual_reports if report ['fiscalDateEnding'] == selected_date), None)
         if selected_report:
             paginated_embeds=self.cog.create_paginated_embeds_for_report(self.symbol, selected_report, self.logo_url)
+            view = PaginationView(paginated_embeds)
+            await interaction.response.edit_message(content="Here is the Cash Flow statement:", embed=paginated_embeds[0], view=view)
+            
+# Dropdown View Class
+class DropdownView(nextcord.ui.View):
+    def __init__(self, symbol, annual_reports, interaction: Interaction, cog, logo_url):
+        super().__init__()
+        self.add_item(Dropdown(symbol, annual_reports, interaction, cog, logo_url))
+        
+# Main Cog Class
+class CashFlow(commands.Cog):
+    def __init__(self, client):
+        self.client = client
+    testServerId = os.getenv('TEST_SERVER_ID')
+
+    async def fetch_income_statement_data(self, symbol):
+        api_key = os.getenv('ALPHA_VANTAGE_API_KEY')
+        url = f"https://www.alphavantage.co/query?function=CASH_FLOW&symbol={symbol}&apikey={api_key}"
+        response = requests.get(url)
+        if response.status_code == 200:
+            data = response.json()
+            return data.get('annualReports', [])
+        return []
+
+    def fetch_logo_image_url(self, symbol):
+        api_key = os.getenv('API_NINJAS_KEY')
+        api_url = f'https://api.api-ninjas.com/v1/logo?name={symbol}'
+        response = requests.get(api_url, headers={'X-Api-Key': api_key})
+        if response.status_code == 200 and response.json():
+            data = response.json()
+            if 'image' in data[0]:
+                return data[0]['image']
+        return None
+
+    def get_company_name_from_ticker(self, symbol):
+        api_key = os.getenv('ALPHA_VANTAGE_API_KEY')
+        endpoint = 'https://www.alphavantage.co/query'
+        params = {'function': 'SYMBOL_SEARCH', 'keywords': symbol, 'apikey': api_key}
+        response = requests.get(endpoint, params=params)
+        if response.status_code == 200 and response.json():
+            data = response.json()
+            if 'bestMatches' in data and data['bestMatches']:
+                full_name = data['bestMatches'][0]['2. name']
+                return full_name.split(' ')[0]  # Assuming the company name is the first part
+        return None
