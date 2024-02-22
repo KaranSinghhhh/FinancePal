@@ -60,7 +60,7 @@ class CashFlow(commands.Cog):
         self.client = client
     testServerId = os.getenv('TEST_SERVER_ID')
 
-    async def fetch_income_statement_data(self, symbol):
+    async def fetch_cash_flow_statement_data(self, symbol):
         api_key = os.getenv('ALPHA_VANTAGE_API_KEY')
         url = f"https://www.alphavantage.co/query?function=CASH_FLOW&symbol={symbol}&apikey={api_key}"
         response = requests.get(url)
@@ -90,3 +90,18 @@ class CashFlow(commands.Cog):
                 full_name = data['bestMatches'][0]['2. name']
                 return full_name.split(' ')[0]  # Assuming the company name is the first part
         return None
+    
+    
+    @nextcord.slash_command(name="cash-flow", description="Gets the Cash Flow Statement for a selected fiscal date", guild_ids=[int(os.getenv('TEST_SERVER_ID'))] )
+    async def the_cashflow_statement(self, interaction: Interaction, symbol :str):
+        annual_reports = await self.fetch_cash_flow_statement_data(symbol)
+        company_name = self.get_company_name_from_ticker(symbol)
+        logo_url = self.fetch_logo_image_url(company_name if company_name else symbol)
+        if annual_reports:
+            view = DropdownView(symbol, annual_reports, interaction, self, logo_url)
+            await interaction.response.send_message("Select a fiscal date:", view=view)
+        else:
+            await interaction.response.send_message("No cash flow statement data available for this symbol.", ephemeral=True)
+
+def setup(client):
+    client.add_cog(CashFlow(client))
