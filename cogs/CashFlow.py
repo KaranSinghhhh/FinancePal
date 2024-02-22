@@ -91,6 +91,24 @@ class CashFlow(commands.Cog):
                 return full_name.split(' ')[0]  # Assuming the company name is the first part
         return None
     
+    def create_paginated_embeds_for_report(self, symbol, the_cash_flow , logo_url):
+        embeds = []
+        bloomberg_url = f"https://www.bloomberg.com/quote/{symbol}:US"
+        # Page 1
+        embed1 = nextcord.Embed(title=f"{symbol} Cash Flow Statement", url=bloomberg_url, description=f"Fiscal Report Date: {the_cash_flow['fiscalDateEnding']}", color=0x4dff4d)
+        embed1.add_field(name="Reported Currency", value=the_cash_flow.get('reportedCurrency', 'N/A'), inline=False)
+        embed1.add_field(name="Operating Cash Flow", value=the_cash_flow.get('operatingCashFlow', 'N/A'), inline=False)
+        embed1.add_field(name="Payments for Operating Activities", value=the_cash_flow.get('paymentsForOperatingActivities', 'N/A'), inline=False)
+        embed1.add_field(name="Proceeds from Operating Activities", value=the_cash_flow.get('proceedsFromOperatingActivities', 'N/A'), inline=False)
+        embed1.add_field(name="Change in Operating Liabilities", value=the_cash_flow.get('changeInOperatingLiabilities', 'N/A'), inline=False)
+        embed1.add_field(name="Change in Operating Assets", value=the_cash_flow.get('changeInOperatingAssets', 'N/A'), inline=False)
+        embed1.add_field(name="Depreciation Depletion and Amortization", value=the_cash_flow.get('depreciationDepletionAndAmortization', 'N/A'), inline=False)
+        embed1.add_field(name="Capital Expenditures", value=the_cash_flow.get('capitalExpenditures', 'N/A'), inline=False)
+        embed1.add_field(name="Change in Receivables", value=the_cash_flow.get('changeInReceivables', 'N/A'), inline=False)
+        embed1.add_field(name="Change in Inventory", value=the_cash_flow.get('changeInInventory', 'N/A'), inline=False)
+        embed1.add_field(name="Profit Loss", value=the_cash_flow.get('profitLoss', 'N/A'), inline=False)
+        embed1.add_field(name="Cash Flow from Investment", value=the_cash_flow.get('cashflowFromInvestment', 'N/A'), inline=False)
+        embed1.add_field(name="Cash Flow from Financing", value=the_cash_flow.get('cashflowFromFinancing', 'N/A'), inline=False)
     
     @nextcord.slash_command(name="cash-flow", description="Gets the Cash Flow Statement for a selected fiscal date", guild_ids=[int(os.getenv('TEST_SERVER_ID'))] )
     async def the_cashflow_statement(self, interaction: Interaction, symbol :str):
