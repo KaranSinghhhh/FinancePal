@@ -12,5 +12,6 @@ COGS = [
     "cogs.MarketNews",
     "cogs.CompanyInfo",
     "cogs.IncomeStatement",
+    "cogs.CashFlow",
     
 ]

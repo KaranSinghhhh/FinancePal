@@ -16,13 +16,13 @@ class PaginationView(nextcord.ui.View):
         self.embeds = embeds
         self.current_page = 0
         
-    @nextcord.ui.button(label="Previous", style= nextcord.Button.style.grey)
+    @nextcord.ui.button(label="Previous", style=nextcord.ButtonStyle.grey)
     async def previous_button(self, button: nextcord.ui.Button, interaction: Interaction):
         if self.current_page > 0:
             self.current_page -= 1
             await interaction.response.edit_message(embed = self.embeds[self.current_page])
 
-    @nextcord.ui.button(label = "next", style= nextcord.Button.style.grey)
+    @nextcord.ui.button(label = "next", style= nextcord.ButtonStyle.grey)
     async def next_button(self, button: nextcord.ui.Button, interaction: Interaction):
         if self.current_page < len(self.embeds) - 1:
             self.current_page += 1
@@ -96,19 +96,54 @@ class CashFlow(commands.Cog):
         bloomberg_url = f"https://www.bloomberg.com/quote/{symbol}:US"
         # Page 1
         embed1 = nextcord.Embed(title=f"{symbol} Cash Flow Statement", url=bloomberg_url, description=f"Fiscal Report Date: {the_cash_flow['fiscalDateEnding']}", color=0x4dff4d)
-        embed1.add_field(name="Reported Currency", value=the_cash_flow.get('reportedCurrency', 'N/A'), inline=False)
-        embed1.add_field(name="Operating Cash Flow", value=the_cash_flow.get('operatingCashFlow', 'N/A'), inline=False)
-        embed1.add_field(name="Payments for Operating Activities", value=the_cash_flow.get('paymentsForOperatingActivities', 'N/A'), inline=False)
-        embed1.add_field(name="Proceeds from Operating Activities", value=the_cash_flow.get('proceedsFromOperatingActivities', 'N/A'), inline=False)
-        embed1.add_field(name="Change in Operating Liabilities", value=the_cash_flow.get('changeInOperatingLiabilities', 'N/A'), inline=False)
-        embed1.add_field(name="Change in Operating Assets", value=the_cash_flow.get('changeInOperatingAssets', 'N/A'), inline=False)
-        embed1.add_field(name="Depreciation Depletion and Amortization", value=the_cash_flow.get('depreciationDepletionAndAmortization', 'N/A'), inline=False)
-        embed1.add_field(name="Capital Expenditures", value=the_cash_flow.get('capitalExpenditures', 'N/A'), inline=False)
-        embed1.add_field(name="Change in Receivables", value=the_cash_flow.get('changeInReceivables', 'N/A'), inline=False)
-        embed1.add_field(name="Change in Inventory", value=the_cash_flow.get('changeInInventory', 'N/A'), inline=False)
-        embed1.add_field(name="Profit Loss", value=the_cash_flow.get('profitLoss', 'N/A'), inline=False)
-        embed1.add_field(name="Cash Flow from Investment", value=the_cash_flow.get('cashflowFromInvestment', 'N/A'), inline=False)
-        embed1.add_field(name="Cash Flow from Financing", value=the_cash_flow.get('cashflowFromFinancing', 'N/A'), inline=False)
+        embed1.add_field(name="Reported Currency", value=f"${the_cash_flow.get('reportedCurrency', 'N/A')}", inline=False)
+        embed1.add_field(name="Operating Cash Flow", value=f"${the_cash_flow.get('operatingCashFlow', 'N/A')}", inline=False)
+        embed1.add_field(name="Payments for Operating Activities", value=f"${the_cash_flow.get('paymentsForOperatingActivities', 'N/A')}", inline=False)
+        embed1.add_field(name="Proceeds from Operating Activities", value=f"${the_cash_flow.get('proceedsFromOperatingActivities', 'N/A')}", inline=False)
+        embed1.add_field(name="Change in Operating Liabilities", value=f"${the_cash_flow.get('changeInOperatingLiabilities', 'N/A')}", inline=False)
+        embed1.add_field(name="Change in Operating Assets", value=f"${the_cash_flow.get('changeInOperatingAssets', 'N/A')}", inline=False)
+        embed1.add_field(name="Depreciation Depletion and Amortization", value=f"${the_cash_flow.get('depreciationDepletionAndAmortization', 'N/A')}", inline=False)
+        embed1.add_field(name="Capital Expenditures", value=f"{the_cash_flow.get('capitalExpenditures', 'N/A')}", inline=False)
+        embed1.add_field(name="Change in Receivables", value=f"${the_cash_flow.get('changeInReceivables', 'N/A')}", inline=False)
+        embed1.add_field(name="Change in Inventory", value=f"${the_cash_flow.get('changeInInventory', 'N/A')}", inline=False)
+        embed1.add_field(name="Profit Loss", value=f"${the_cash_flow.get('profitLoss', 'N/A')}", inline=False)
+        embed1.add_field(name="Cash Flow from Investment", value=f"${the_cash_flow.get('cashflowFromInvestment', 'N/A')}", inline=False)
+        embed1.add_field(name="Cash Flow from Financing", value=f"${the_cash_flow.get('cashflowFromFinancing', 'N/A')}", inline=False)
+        
+        if logo_url:
+            embed1.set_thumbnail(url=logo_url)
+        
+        current_time = datetime.now().strftime('%m/%d/%Y %H:%M %p')
+        embed1.set_footer(text=f"Data provided by FinancePal Bot | {current_time}")
+        embeds.append(embed1)
+        
+        embed2 = nextcord.Embed(title=f"{symbol} Cash Flow Statement", url=bloomberg_url, description=f"Fiscal Report Date: {the_cash_flow['fiscalDateEnding']}", color=0x4dff4d)
+        embed1.add_field(name="Proceeds from Payment of Short Term Debt", value=f"${the_cash_flow.get('proceedsFromRepaymentsOfShortTermDebt', 'N/A')}", inline=False)
+        embed1.add_field(name="Payments for Repurchase of Common Stock", value=f"${the_cash_flow.get('paymentsForRepurchaseOfCommonStock', 'N/A')}", inline=False)
+        embed1.add_field(name="Payments for Repurchase of Equity", value=f"${the_cash_flow.get('paymentsForRepurchaseOfEquity', 'N/A')}", inline=False)
+        embed1.add_field(name="Payments for Repurchase of Preferred Stock", value=f"${the_cash_flow.get('paymentsForRepurchaseOfPreferredStock', 'N/A')}", inline=False)
+        embed1.add_field(name="Dividend Payout", value=f"${the_cash_flow.get('dividendPayout', 'N/A')}", inline=False)
+        embed1.add_field(name="Dividend Payout Common Stock", value=f"${the_cash_flow.get('dividendPayoutCommonStock', 'N/A')}", inline=False)
+        embed1.add_field(name="Divident Payout Preferred Stock", value=f"${the_cash_flow.get('dividendPayoutPreferredStock', 'N/A')}", inline=False)
+        embed1.add_field(name="Proceeds from Issuance of Common Stock", value=f"${the_cash_flow.get('proceedsFromIssuanceOfCommonStock', 'N/A')}", inline=False)
+        embed1.add_field(name="Proceeds from Issuance of Long Term Debt and Capital Securities Net", value=f"${the_cash_flow.get('proceedsFromIssuanceOfLongTermDebtAndCapitalSecuritiesNet', 'N/A')}", inline=False)
+        embed1.add_field(name="Proceeds from Issuance of Preferred Stock", value=f"${the_cash_flow.get('proceedsFromIssuanceOfPrefferedStock', 'N/A')}", inline=False)
+        embed1.add_field(name="Proceeds from Repurchase of Equity ", value=f"${the_cash_flow.get('proceedsFromRepurchaseOfEquity', 'N/A')}", inline=False)
+        embed1.add_field(name="Proceeds from Sale of Treasury Stock", value=f"${the_cash_flow.get('proceedsFromSaleOfTreasuryStock', 'N/A')}", inline=False)
+        embed1.add_field(name="Change In Cash and Cash Equivalents", value=f"${the_cash_flow.get('changeInCashAndCashEquivalents', 'N/A')}", inline=False)
+        embed1.add_field(name="Change In Exchange Rate", value=f"${the_cash_flow.get('changeInExchangeRate', 'N/A')}", inline=False)
+        embed1.add_field(name="Net Income", value=f"${the_cash_flow.get('netIncome', 'N/A')}", inline=False)
+        
+        
+        if logo_url:
+            embed2.set_thumbnail(url=logo_url)
+        #embed2.set_footer(text="Data provided by FinancePal Bot")
+        current_time = datetime.now().strftime('%m/%d/%Y %H:%M %p')
+        embed2.set_footer(text=f"Data provided by FinancePal Bot | {current_time}")
+        embeds.append(embed2)
+
+        return embeds
+          
     
     @nextcord.slash_command(name="cash-flow", description="Gets the Cash Flow Statement for a selected fiscal date", guild_ids=[int(os.getenv('TEST_SERVER_ID'))] )
     async def the_cashflow_statement(self, interaction: Interaction, symbol :str):

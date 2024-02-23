@@ -1,0 +1,1982 @@
+{
+    "items": "50",
+    "sentiment_score_definition": "x <= -0.35: Bearish; -0.35 < x <= -0.15: Somewhat-Bearish; -0.15 < x < 0.15: Neutral; 0.15 <= x < 0.35: Somewhat_Bullish; x >= 0.35: Bullish",
+    "relevance_score_definition": "0 < x <= 1, with a higher score indicating higher relevance.",
+    "feed": [
+        {
+            "title": "Stephen Chow, Dwight Howard and 50-year-old whisky NFTs: Nifty Newsletter",
+            "url": "https://cointelegraph.com/news/nft-stephen-chow-dwight-howard-whisky-newsletter",
+            "time_published": "20240214T200000",
+            "authors": [
+                "Ezra Reguerra"
+            ],
+            "summary": "NFTs launched by Hong Kong celebrity Stephen Chow recorded $23 million in trading volume, while a whisky distributor is using NFTs to sell a rare collection.",
+            "banner_image": "https://images.cointelegraph.com/cdn-cgi/image/format=auto,onerror=redirect,quality=90,width=1200/https://s3.cointelegraph.com/uploads/2024-02/38dae1f3-2e45-4679-a12f-8acb3884e44c.jpg",
+            "source": "Cointelegraph",
+            "category_within_source": "n/a",
+            "source_domain": "cointelegraph.com",
+            "topics": [
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.99489"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.108179"
+                }
+            ],
+            "overall_sentiment_score": 0.038295,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.345674",
+                    "ticker_sentiment_score": "0.04517",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:ETH",
+                    "relevance_score": "0.142144",
+                    "ticker_sentiment_score": "0.223292",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "CRYPTO:ZIL",
+                    "relevance_score": "0.071357",
+                    "ticker_sentiment_score": "0.130815",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:ERC",
+                    "relevance_score": "0.408949",
+                    "ticker_sentiment_score": "-0.041988",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "'You Need A Little Peyote': Jane Fonda And Lily Tomlin's Advice For Stephen Colbert",
+            "url": "https://www.benzinga.com/markets/cannabis/24/02/37136984/you-need-a-little-peyote-jane-fonda-and-lily-tomlins-advice-for-stephen-colbert",
+            "time_published": "20240214T195759",
+            "authors": [
+                "El Planteo"
+            ],
+            "summary": "During an interview on \"The Late Show,\" actresses Jane Fonda and Lily Tomlin recommended Stephen Colbert to try peyote. They were on the show promoting their 2022 movie, \"Moving On.\" \"You guys have done peoyte together,\" Colbert said. They both confirmed it.",
+            "banner_image": "https://cdn.benzinga.com/files/images/story/2024/02/14/screen_shot_2024-02-14_at_16.46.34.png?width=1200&height=800&fit=crop",
+            "source": "Benzinga",
+            "category_within_source": "General",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.108179"
+                }
+            ],
+            "overall_sentiment_score": 0.216789,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": []
+        },
+        {
+            "title": "When Citi Met AVAX: Banking Giant Taps Avalanche for Tokenization Pilot",
+            "url": "https://decrypt.co/217529/citi-bank-avalanche-avax-blockchain",
+            "time_published": "20240214T195627",
+            "authors": [
+                "Mat Di Salvo"
+            ],
+            "summary": "The tech trial will make the financial titan the second major bank to tinker with AVAX.",
+            "banner_image": "https://cdn.decrypt.co/resize/1024/height/512/wp-content/uploads/2020/05/shutterstock_305511503-scaled-gID_7.jpg",
+            "source": "Decrypt.co",
+            "category_within_source": "n/a",
+            "source_domain": "decrypt.co",
+            "topics": [
+                {
+                    "topic": "Finance",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.682689"
+                }
+            ],
+            "overall_sentiment_score": 0.177028,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "WT",
+                    "relevance_score": "0.183895",
+                    "ticker_sentiment_score": "0.088484",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "C",
+                    "relevance_score": "0.514619",
+                    "ticker_sentiment_score": "0.574908",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "CRYPTO:ETH",
+                    "relevance_score": "0.183895",
+                    "ticker_sentiment_score": "-0.083263",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:AVAX",
+                    "relevance_score": "0.358152",
+                    "ticker_sentiment_score": "0.0",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "TSX Crypto Stock Make Top Gainers and Trading List  ( TSX: BITF ) ,  ( TSX: HUT ) ",
+            "url": "https://www.investorideas.com/news/2024/cryptocurrency/02142Stocks.asp",
+            "time_published": "20240214T195329",
+            "authors": [],
+            "summary": "TSX Crypto Stock Make Top Gainers and Trading List ( TSX: BITF ) , ( TSX: HUT ...",
+            "banner_image": null,
+            "source": "Investor Ideas",
+            "category_within_source": "n/a",
+            "source_domain": "www.investorideas.com",
+            "topics": [
+                {
+                    "topic": "Technology",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.99393"
+                }
+            ],
+            "overall_sentiment_score": 0.16709,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "BITF",
+                    "relevance_score": "0.398781",
+                    "ticker_sentiment_score": "0.176709",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "HUT",
+                    "relevance_score": "0.246167",
+                    "ticker_sentiment_score": "0.03703",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.469457",
+                    "ticker_sentiment_score": "0.163943",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Why Is Kraft Heinz Stock Trading Lower Today? - Kraft Heinz  ( NASDAQ:KHC ) ",
+            "url": "https://www.benzinga.com/news/earnings/24/02/37136844/this-warren-buffett-top-10-stock-is-falling-after-q4-earnings-report-heres-why",
+            "time_published": "20240214T195137",
+            "authors": [
+                "Vandana Singh"
+            ],
+            "summary": "As of January 20024 filings, Kraft Heinz Company KHC was the 7th top holding by value of Warren Buffett's Berkshire Hathaway BRK. Kraft-Heinz holdings were valued at $12.3 billion then. Wednesday, the Kraft Heinz Company's fourth-quarter 2023 sales of $6.86 billion fell 7.1% year-on-year ( Y/Y ) ...",
+            "banner_image": "https://cdn.benzinga.com/files/images/story/2024/Warren-Buffett--Chairman-And-Ceo-Of-Berk_8.jpeg?width=1200&height=800&fit=crop",
+            "source": "Benzinga",
+            "category_within_source": "General",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Economy - Monetary",
+                    "relevance_score": "0.158519"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.360215"
+                },
+                {
+                    "topic": "Manufacturing",
+                    "relevance_score": "0.333333"
+                },
+                {
+                    "topic": "Earnings",
+                    "relevance_score": "0.714479"
+                },
+                {
+                    "topic": "Technology",
+                    "relevance_score": "0.333333"
+                },
+                {
+                    "topic": "Finance",
+                    "relevance_score": "0.333333"
+                }
+            ],
+            "overall_sentiment_score": 0.079237,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "SSTK",
+                    "relevance_score": "0.109455",
+                    "ticker_sentiment_score": "0.0",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "BRK-A",
+                    "relevance_score": "0.109455",
+                    "ticker_sentiment_score": "0.250663",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "KHC",
+                    "relevance_score": "0.784481",
+                    "ticker_sentiment_score": "0.0",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "MJM Electric Cooperative Begins Deployment of Landis+Gyr's Gridstream\u00ae Connect Cellular AMI Meters",
+            "url": "https://www.benzinga.com/pressreleases/24/02/n37136762/mjm-electric-cooperative-begins-deployment-of-landis-gyrs-gridstream-connect-cellular-ami-meters",
+            "time_published": "20240214T194800",
+            "authors": [
+                "PRNewswire"
+            ],
+            "summary": "ATLANTA, Feb. 14, 2024 /PRNewswire/ -- MJM Electric Cooperative has signed a contract with Landis+Gyr LAND to deploy the Gridstream\u00ae Connect cellular AMI system, which provides a flexible platform for managing current and future grid technology needs.",
+            "banner_image": "https://www.benzinga.com/next-assets/images/schema-image-default.png",
+            "source": "Benzinga",
+            "category_within_source": "News",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Technology",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.108179"
+                }
+            ],
+            "overall_sentiment_score": 0.359803,
+            "overall_sentiment_label": "Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "VOD",
+                    "relevance_score": "0.090816",
+                    "ticker_sentiment_score": "0.239051",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Michael Corleone: The Stunning Life Transformation Of 'Cocaine Queen' Griselda Blanco's Son",
+            "url": "https://www.benzinga.com/markets/cannabis/24/02/37136721/michael-corleone-the-stunning-life-transformation-of-cocaine-queen-griselda-blancos-son",
+            "time_published": "20240214T194559",
+            "authors": [
+                "El Planteo"
+            ],
+            "summary": "Michael Corleone Sep\u00falveda Blanco, the only living son of the infamous Colombian drug lord Griselda Blanco, also known as the \"Cocaine Queen,\" whose life has recently been serialized by Netflix, has embarked on an unexpected path following his participation in a reality show.",
+            "banner_image": "https://cdn.benzinga.com/files/images/story/2024/02/14/screen_shot_2024-02-14_at_16.37.11.png?width=1200&height=800&fit=crop",
+            "source": "Benzinga",
+            "category_within_source": "General",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.108179"
+                }
+            ],
+            "overall_sentiment_score": 0.16561,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "NFLX",
+                    "relevance_score": "0.218817",
+                    "ticker_sentiment_score": "-0.03366",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Brandywine Realty Trust Announces Common Quarterly Dividend, and Confirms First Quarter 2024 Earnings Release and Conference Call",
+            "url": "https://www.globenewswire.com/news-release/2024/02/14/2829412/0/en/Brandywine-Realty-Trust-Announces-Common-Quarterly-Dividend-and-Confirms-First-Quarter-2024-Earnings-Release-and-Conference-Call.html",
+            "time_published": "20240214T194500",
+            "authors": [
+                "Brandywine Realty Trust"
+            ],
+            "summary": "PHILADELPHIA, Feb. 14, 2024 ( GLOBE NEWSWIRE ) -- Brandywine Realty Trust ( NYSE:BDN ) announced today that its Board of Trustees has declared a quarterly cash dividend of $0.15 per common share and OP Unit payable on April 18, 2024 to holders of record on April 4, 2024.",
+            "banner_image": "https://ml.globenewswire.com/Resource/Download/0a9f192f-ce12-4a91-b77a-b39b1faed050",
+            "source": "GlobeNewswire",
+            "category_within_source": "n/a",
+            "source_domain": "www.globenewswire.com",
+            "topics": [
+                {
+                    "topic": "Economy - Monetary",
+                    "relevance_score": "0.310843"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.614606"
+                },
+                {
+                    "topic": "Earnings",
+                    "relevance_score": "0.158519"
+                },
+                {
+                    "topic": "Real Estate & Construction",
+                    "relevance_score": "1.0"
+                }
+            ],
+            "overall_sentiment_score": -0.026708,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "BDN",
+                    "relevance_score": "0.157827",
+                    "ticker_sentiment_score": "0.176963",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Brandywine Realty Trust Announces Common Quarterly Dividend, and Confirms First Quarter 2024 Earnings Release and Conference Call - Brandywine Realty Tr  ( NYSE:BDN ) ",
+            "url": "https://www.benzinga.com/pressreleases/24/02/g37136704/brandywine-realty-trust-announces-common-quarterly-dividend-and-confirms-first-quarter-2024-earnin",
+            "time_published": "20240214T194500",
+            "authors": [
+                "Globe Newswire"
+            ],
+            "summary": "PHILADELPHIA, Feb. 14, 2024 ( GLOBE NEWSWIRE ) -- Brandywine Realty Trust BDN announced today that its Board of Trustees has declared a quarterly cash dividend of $0.15 per common share and OP Unit payable on April 18, 2024 to holders of record on April 4, 2024.",
+            "banner_image": "https://www.benzinga.com/next-assets/images/schema-image-default.png",
+            "source": "Benzinga",
+            "category_within_source": "News",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Economy - Monetary",
+                    "relevance_score": "0.310843"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.744043"
+                },
+                {
+                    "topic": "Earnings",
+                    "relevance_score": "0.158519"
+                },
+                {
+                    "topic": "Real Estate & Construction",
+                    "relevance_score": "1.0"
+                }
+            ],
+            "overall_sentiment_score": -0.024235,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "BDN",
+                    "relevance_score": "0.20279",
+                    "ticker_sentiment_score": "0.204395",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Aditya Birla Fashion net loss narrows in Q3",
+            "url": "https://www.financialexpress.com/business/industry-aditya-birla-fashion-net-loss-narrows-in-q3-3394676/",
+            "time_published": "20240214T194500",
+            "authors": [
+                "Viveat Susan Pinto"
+            ],
+            "summary": "Aditya Birla Fashion and Retail on Wednesday reported a consolidated net loss of Rs 78 crore in the quarter ended December 31, 2023 ( Q3FY24 ) , missing Street estimates by a wide margin. Bloomberg consensus estimates had pegged Q3 net loss at Rs 36 crore.",
+            "banner_image": "https://www.financialexpress.com/wp-content/uploads/2024/02/Fashion-Reuters.jpg",
+            "source": "The Financial Express",
+            "category_within_source": "n/a",
+            "source_domain": "www.financialexpress.com",
+            "topics": [
+                {
+                    "topic": "Earnings",
+                    "relevance_score": "0.795202"
+                }
+            ],
+            "overall_sentiment_score": 0.016678,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": []
+        },
+        {
+            "title": "GOP Gov. Noem Signs Bill Compelling South Dakota's Medical Marijuana Patients To Acknowledge Federal Gun Ban",
+            "url": "https://www.benzinga.com/markets/cannabis/24/02/37136700/gop-gov-noem-signs-bill-compelling-south-dakotas-medical-marijuana-patients-to-acknowledge-feder",
+            "time_published": "20240214T194453",
+            "authors": [
+                "Jelena Martinovic"
+            ],
+            "summary": "Governor Kristi Noem ( R ) signed a measure requiring South Dakota's registered medical cannabis patients to acknowledge in writing that they are aware of being barred from owning a firearm in keeping with federal law. House Bill 1024, introduced by state Rep.",
+            "banner_image": "https://cdn.benzinga.com/files/images/story/2024/guns-and-marihuana-mwewering-and-PeterPi.jpeg?width=1200&height=800&fit=crop",
+            "source": "Benzinga",
+            "category_within_source": "News",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.161647"
+                }
+            ],
+            "overall_sentiment_score": 0.212779,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "MJNA",
+                    "relevance_score": "0.264897",
+                    "ticker_sentiment_score": "0.046763",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Dogwifhat Up 23% As This Solana Darling Ranks 5th By Memecoin Mcap: 'The Doge Of This Cycle,' Says Crypto Expert",
+            "url": "https://www.benzinga.com/markets/cryptocurrency/24/02/37133765/dogwifhat-up-23-as-this-solana-darling-ranks-5th-by-memecoin-mcap-the-doge-of-this-cycle-s",
+            "time_published": "20240214T194028",
+            "authors": [
+                "Khyathi Dalal"
+            ],
+            "summary": "Solana's \"Dogecoin killer\" dogwifhat WIF/USD clocked a 23.2% gain in the past 24 hours, powered by Bitcoin cracking the $52,000 mark. What Happened: Dogwifhat surged into the top five memecoins by market capitalization, based on CoinGecko data.",
+            "banner_image": "https://cdn.benzinga.com/files/images/story/2024/02/14/shutterstock_2144685605_0.jpg?width=1200&height=800&fit=crop",
+            "source": "Benzinga",
+            "category_within_source": "Markets",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.158519"
+                }
+            ],
+            "overall_sentiment_score": 0.155172,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.167322",
+                    "ticker_sentiment_score": "-0.200581",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "CRYPTO:SHIB",
+                    "relevance_score": "0.327366",
+                    "ticker_sentiment_score": "0.280062",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "CRYPTO:DOGE",
+                    "relevance_score": "0.601928",
+                    "ticker_sentiment_score": "0.121431",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:SOL",
+                    "relevance_score": "0.167322",
+                    "ticker_sentiment_score": "0.20929",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "CRYPTO:MEME",
+                    "relevance_score": "0.167322",
+                    "ticker_sentiment_score": "0.2028",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Alibaba looks for partners in West Asia as Beijing deepens Gulf ties | World News",
+            "url": "https://www.business-standard.com/world-news/alibaba-looks-for-partners-in-west-asia-as-beijing-deepens-gulf-ties-124021500013_1.html",
+            "time_published": "20240214T193934",
+            "authors": [
+                "Bloomberg"
+            ],
+            "summary": "Alibaba looks for partners in West Asia as Beijing deepens Gulf ties Business Standard ...",
+            "banner_image": "https://bsmedia.business-standard.com/_media/bs/img/article/2024-02/15/full/1707939473-5136.jpg?im=FitAndFill=(826,465)",
+            "source": "Business Standard",
+            "category_within_source": "GoogleRSS",
+            "source_domain": "www.business-standard.com",
+            "topics": [],
+            "overall_sentiment_score": 0.063383,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "BABA",
+                    "relevance_score": "0.282234",
+                    "ticker_sentiment_score": "0.046035",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Nelson Peltz Throws Cold Water On Disney As Proxy Battle Heats Up: 'Very Little Meat On The Bones' - Walt Disney  ( NYSE:DIS ) ",
+            "url": "https://www.benzinga.com/news/24/02/37136578/nelson-peltz-throws-cold-water-on-disney-as-proxy-battle-heats-up-very-little-meat-on-the-bones",
+            "time_published": "20240214T193719",
+            "authors": [
+                "Adam Eckert"
+            ],
+            "summary": "Despite Walt Disney Co's DIS string of recent announcements that sent shares higher, activist investor Nelson Peltz still isn't convinced management knows how to bring the magic back.",
+            "banner_image": "https://cdn.benzinga.com/files/images/story/2024/disney-lightning_1.jpeg?width=1200&height=800&fit=crop",
+            "source": "Benzinga",
+            "category_within_source": "General",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Earnings",
+                    "relevance_score": "0.310843"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.214378"
+                }
+            ],
+            "overall_sentiment_score": -0.057727,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": []
+        },
+        {
+            "title": "Morgan Stanley cutting hundreds of wealth-management jobs",
+            "url": "https://www.marketwatch.com/story/morgan-stanley-cutting-hundreds-of-wealth-management-jobs-d536d6b2",
+            "time_published": "20240214T193700",
+            "authors": [
+                "Steve Gelsi"
+            ],
+            "summary": "Morgan Stanley is cutting hundreds of wealth-management positions, including some managing directors, in one of new Chief Executive Ted Pick's first major moves since taking over six weeks ago, according to a source familiar with the bank.",
+            "banner_image": "https://images.mktw.net/im-680201/social",
+            "source": "MarketWatch",
+            "category_within_source": "Top Stories",
+            "source_domain": "www.marketwatch.com",
+            "topics": [
+                {
+                    "topic": "Finance",
+                    "relevance_score": "1.0"
+                }
+            ],
+            "overall_sentiment_score": -0.043767,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "MS",
+                    "relevance_score": "0.950841",
+                    "ticker_sentiment_score": "-0.079519",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Novel ERC-X token crashes 87% after uncovering double spending glitch",
+            "url": "https://cointelegraph.com/news/novel-erc-x-token-crashes-87-percent-after-uncovering-double-spending-glitch",
+            "time_published": "20240214T193553",
+            "authors": [
+                "Zhiyuan Sun"
+            ],
+            "summary": "A bug in its smart contract that allows users to double their balance by sending tokens to themselves has led to a crash in Miner's price.",
+            "banner_image": "https://images.cointelegraph.com/cdn-cgi/image/format=auto,onerror=redirect,quality=90,width=1200/https://s3.cointelegraph.com/uploads/2024-02/92ca6be5-3a60-4e9a-b523-95a6b3c8077c.jpg",
+            "source": "Cointelegraph",
+            "category_within_source": "n/a",
+            "source_domain": "cointelegraph.com",
+            "topics": [
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.576289"
+                }
+            ],
+            "overall_sentiment_score": -0.057491,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "CRYPTO:ETH",
+                    "relevance_score": "0.56415",
+                    "ticker_sentiment_score": "0.017229",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:ERC",
+                    "relevance_score": "0.880871",
+                    "ticker_sentiment_score": "-0.087908",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "What's driving the market rebound on Wednesday - and why we're buying the dips",
+            "url": "https://www.cnbc.com/2024/02/14/whats-driving-the-rebound-on-wednesday-and-why-were-buying-the-dips.html",
+            "time_published": "20240214T193506",
+            "authors": [
+                "Jeff Marks"
+            ],
+            "summary": "Every weekday, the Investing Club releases the Homestretch. an actionable afternoon update just in time for the last hour of trading.",
+            "banner_image": "https://image.cnbcfm.com/api/v1/image/104180889-GettyImages-500949892.jpg?v=1685704244&w=1920&h=1080",
+            "source": "CNBC",
+            "category_within_source": "Top News",
+            "source_domain": "www.cnbc.com",
+            "topics": [
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.360215"
+                }
+            ],
+            "overall_sentiment_score": -0.094439,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": []
+        },
+        {
+            "title": "Dow Edges Higher; QuidelOrtho Shares Plummet - enGene Holdings  ( NASDAQ:ENGN ) , Anitra  ( AMEX:AZTR ) ",
+            "url": "https://www.benzinga.com/news/earnings/24/02/37136487/dow-edges-higher-quidelortho-shares-plummet",
+            "time_published": "20240214T193255",
+            "authors": [
+                "Avi Kapoor"
+            ],
+            "summary": "U.S. stocks traded mostly higher toward the end of trading, with the Nasdaq Composite gaining around 100 points on Wednesday. The Dow traded up 0.11% to 38,313.27 while the NASDAQ rose 0.70% to 15,765.18. The S&P 500 also rose, gaining, 0.49% to 4,977.43. Industrials shares rose by 1.1% on ...",
+            "banner_image": "https://cdn.benzinga.com/files/images/story/2024/02/14/image20.jpeg?width=1200&height=800&fit=crop",
+            "source": "Benzinga",
+            "category_within_source": "Trading",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Economy - Monetary",
+                    "relevance_score": "0.310843"
+                },
+                {
+                    "topic": "Life Sciences",
+                    "relevance_score": "0.5"
+                },
+                {
+                    "topic": "IPO",
+                    "relevance_score": "0.310843"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.77141"
+                },
+                {
+                    "topic": "Earnings",
+                    "relevance_score": "0.614606"
+                },
+                {
+                    "topic": "Technology",
+                    "relevance_score": "0.5"
+                }
+            ],
+            "overall_sentiment_score": 0.157375,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "ENGN",
+                    "relevance_score": "0.221481",
+                    "ticker_sentiment_score": "0.222515",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "OMH",
+                    "relevance_score": "0.148731",
+                    "ticker_sentiment_score": "0.039297",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "HCSG",
+                    "relevance_score": "0.148731",
+                    "ticker_sentiment_score": "0.54819",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "QDEL",
+                    "relevance_score": "0.148731",
+                    "ticker_sentiment_score": "0.109779",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Here's How Much $1000 Invested In Waste Management 10 Years Ago Would Be Worth Today - Waste Management  ( NYSE:WM ) ",
+            "url": "https://www.benzinga.com/insights/news/24/02/37136461/heres-how-much-1000-invested-in-waste-management-10-years-ago-would-be-worth-today",
+            "time_published": "20240214T193148",
+            "authors": [
+                "Benzinga Insights"
+            ],
+            "summary": "Waste Management WM has outperformed the market over the past 10 years by 6.34% on an annualized basis producing an average annual return of 16.75%. Currently, Waste Management has a market capitalization of $79.07 billion.",
+            "banner_image": "https://cdn.benzinga.com/files/images/story/2023/valuestock_image_4.jpeg?width=1200&height=800&fit=crop",
+            "source": "Benzinga",
+            "category_within_source": "Trading",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Energy & Transportation",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.108179"
+                }
+            ],
+            "overall_sentiment_score": 0.160819,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "WM",
+                    "relevance_score": "0.980595",
+                    "ticker_sentiment_score": "0.386944",
+                    "ticker_sentiment_label": "Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Did January Inflation Numbers Spark Market Overreaction? 'It's Not That Big Of A Deal,' Says Former CME Group Chief Economist - Invesco QQQ Trust, Series 1  ( NASDAQ:QQQ ) , SPDR S&P 500  ( ARCA:SPY ) ",
+            "url": "https://www.benzinga.com/markets/equities/24/02/37136439/did-january-inflation-numbers-spark-market-overreaction-its-not-that-big-of-a-deal-says-former-c",
+            "time_published": "20240214T193110",
+            "authors": [
+                "Neil Dennis"
+            ],
+            "summary": "Tuesday's consumer price inflation data disappointed equity market investors who were still - despite the Federal Reserve's insistence otherwise - hoping for the first rate cut in March. \"Jerome Powell already said he wasn't going to cut rates in March. I think the problem was the markets didn't ...",
+            "banner_image": "https://cdn.benzinga.com/files/images/story/2024/BluPutnam.jpeg?width=1200&height=800&fit=crop",
+            "source": "Benzinga",
+            "category_within_source": "Markets",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Economy - Monetary",
+                    "relevance_score": "0.972193"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.961735"
+                },
+                {
+                    "topic": "Earnings",
+                    "relevance_score": "0.576289"
+                },
+                {
+                    "topic": "Finance",
+                    "relevance_score": "1.0"
+                }
+            ],
+            "overall_sentiment_score": -0.123679,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "IVZ",
+                    "relevance_score": "0.05234",
+                    "ticker_sentiment_score": "-0.107017",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CME",
+                    "relevance_score": "0.05234",
+                    "ticker_sentiment_score": "-0.016964",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Novo Nordisk Unusual Options Activity For February 14 - Novo Nordisk  ( NYSE:NVO ) ",
+            "url": "https://www.benzinga.com/insights/options/24/02/37136438/novo-nordisk-unusual-options-activity-for-february-14",
+            "time_published": "20240214T193102",
+            "authors": [
+                "Benzinga Insights"
+            ],
+            "summary": "Whales with a lot of money to spend have taken a noticeably bearish stance on Novo Nordisk. Looking at options history for Novo Nordisk NVO we detected 21 trades. If we consider the specifics of each trade, it is accurate to state that 28% of the investors opened trades with bullish expectations ...",
+            "banner_image": "https://cdn.benzinga.com/files/images/story/2023/movers_image_5.jpeg?width=1200&height=800&fit=crop",
+            "source": "Benzinga",
+            "category_within_source": "Markets",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Life Sciences",
+                    "relevance_score": "0.5"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.929393"
+                },
+                {
+                    "topic": "Earnings",
+                    "relevance_score": "0.360215"
+                },
+                {
+                    "topic": "Finance",
+                    "relevance_score": "0.5"
+                }
+            ],
+            "overall_sentiment_score": 0.090114,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "MS",
+                    "relevance_score": "0.097062",
+                    "ticker_sentiment_score": "-0.197985",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "NVO",
+                    "relevance_score": "0.727604",
+                    "ticker_sentiment_score": "0.264417",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Parents sue United Airlines after 6-year-old allegedly burned by hot meal that fell off tray table",
+            "url": "https://www.foxbusiness.com/fox-news-travel/parents-sue-united-airlines-6-year-old-allegedly-burned-hot-meal-fell-tray-table",
+            "time_published": "20240214T193100",
+            "authors": [
+                "Pilar Arias"
+            ],
+            "summary": "A 6-year-old girl was burned by a hot meal that fell off a faulty tray table on a United Airlines flight, her parents claim in a new lawsuit. Michal and Ben Fefferman filed their complaint in Chicago federal court last week.",
+            "banner_image": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/854081161001/04690e0a-9863-4514-ab71-f04280e7e91d/137cf827-a4b9-434f-884c-029802905df2/1280x720/match/image.jpg",
+            "source": "Fox Business News",
+            "category_within_source": "n/a",
+            "source_domain": "www.foxbusiness.com",
+            "topics": [
+                {
+                    "topic": "Energy & Transportation",
+                    "relevance_score": "1.0"
+                }
+            ],
+            "overall_sentiment_score": -0.312254,
+            "overall_sentiment_label": "Somewhat-Bearish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "UAL",
+                    "relevance_score": "0.377142",
+                    "ticker_sentiment_score": "-0.281944",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                }
+            ]
+        },
+        {
+            "title": "Intuit's Options Frenzy: What You Need to Know - Intuit  ( NASDAQ:INTU ) ",
+            "url": "https://www.benzinga.com/insights/options/24/02/37136436/intuits-options-frenzy-what-you-need-to-know",
+            "time_published": "20240214T193057",
+            "authors": [
+                "Benzinga Insights"
+            ],
+            "summary": "Deep-pocketed investors have adopted a bullish approach towards Intuit INTU, and it's something market players shouldn't ignore. Our tracking of public options records at Benzinga unveiled this significant move today.",
+            "banner_image": "https://cdn.benzinga.com/files/images/story/2023/movers_image_1.jpeg?width=1200&height=800&fit=crop",
+            "source": "Benzinga",
+            "category_within_source": "Markets",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Earnings",
+                    "relevance_score": "0.158519"
+                },
+                {
+                    "topic": "Technology",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.266143"
+                }
+            ],
+            "overall_sentiment_score": 0.216742,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "INTU",
+                    "relevance_score": "0.829093",
+                    "ticker_sentiment_score": "0.368312",
+                    "ticker_sentiment_label": "Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Roblox's Options: A Look at What the Big Money is Thinking - Roblox  ( NYSE:RBLX ) ",
+            "url": "https://www.benzinga.com/insights/options/24/02/37136432/robloxs-options-a-look-at-what-the-big-money-is-thinking",
+            "time_published": "20240214T193052",
+            "authors": [
+                "Benzinga Insights"
+            ],
+            "summary": "High-rolling investors have positioned themselves bullish on Roblox RBLX, and it's important for retail traders to take note. \\This activity came to our attention today through Benzinga's tracking of publicly available options data.",
+            "banner_image": "https://cdn.benzinga.com/files/images/story/2023/movers_image_0.jpeg?width=1200&height=800&fit=crop",
+            "source": "Benzinga",
+            "category_within_source": "Markets",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.413559"
+                },
+                {
+                    "topic": "Earnings",
+                    "relevance_score": "0.360215"
+                },
+                {
+                    "topic": "Technology",
+                    "relevance_score": "0.5"
+                },
+                {
+                    "topic": "Finance",
+                    "relevance_score": "0.5"
+                }
+            ],
+            "overall_sentiment_score": 0.209516,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "GS",
+                    "relevance_score": "0.07446",
+                    "ticker_sentiment_score": "0.0",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "RBLX",
+                    "relevance_score": "0.775616",
+                    "ticker_sentiment_score": "0.377522",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "BCS",
+                    "relevance_score": "0.07446",
+                    "ticker_sentiment_score": "0.177927",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "USA Pickleball Grants Official Paddle Approval and Certification for OWL Paddles to be Used in all USAP Sanctioned Tournaments, Leagues and Events",
+            "url": "https://www.benzinga.com/pressreleases/24/02/n37136440/usa-pickleball-grants-official-paddle-approval-and-certification-for-owl-paddles-to-be-used-in-all",
+            "time_published": "20240214T193000",
+            "authors": [
+                "PRNewswire"
+            ],
+            "summary": "Certification news comes as OWL is announced as an official paddle sponsor of the APP",
+            "banner_image": "https://www.benzinga.com/next-assets/images/schema-image-default.png",
+            "source": "Benzinga",
+            "category_within_source": "General",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Technology",
+                    "relevance_score": "1.0"
+                }
+            ],
+            "overall_sentiment_score": 0.264254,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "META",
+                    "relevance_score": "0.075279",
+                    "ticker_sentiment_score": "0.140537",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Red Cat Reports Preliminary Record Revenue 16% Above Guidance for Third Quarter of Fiscal 2024 and Increases Guidance for Fourth Quarter 2024",
+            "url": "https://www.globenewswire.com/news-release/2024/02/14/2829407/0/en/Red-Cat-Reports-Preliminary-Record-Revenue-16-Above-Guidance-for-Third-Quarter-of-Fiscal-2024-and-Increases-Guidance-for-Fourth-Quarter-2024.html",
+            "time_published": "20240214T193000",
+            "authors": [
+                "Red Cat Holdings",
+                "Inc."
+            ],
+            "summary": "SAN JUAN, Puerto Rico, Feb. 14, 2024 ( GLOBE NEWSWIRE ) -- Red Cat Holdings, Inc. ( Nasdaq: RCAT ) ( \"Red Cat'' or the \"Company\" ) , a drone technology company integrating robotic hardware and software for military, government, and commercial operations, reports preliminary record revenue for ...",
+            "banner_image": "https://ml.globenewswire.com/Resource/Download/dcccaff0-4678-4fa7-a656-8f4b822a494d",
+            "source": "GlobeNewswire",
+            "category_within_source": "n/a",
+            "source_domain": "www.globenewswire.com",
+            "topics": [
+                {
+                    "topic": "IPO",
+                    "relevance_score": "0.158519"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.158519"
+                },
+                {
+                    "topic": "Earnings",
+                    "relevance_score": "0.87644"
+                },
+                {
+                    "topic": "Energy & Transportation",
+                    "relevance_score": "1.0"
+                }
+            ],
+            "overall_sentiment_score": 0.071593,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "RCAT",
+                    "relevance_score": "0.653008",
+                    "ticker_sentiment_score": "0.110599",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "MSMEs need a digital boost; digital adoption and maturity sector is suboptimal",
+            "url": "https://www.financialexpress.com/business/sme-msmes-need-a-digital-boost-digital-adoption-and-maturity-sector-is-suboptimal-3394561/",
+            "time_published": "20240214T193000",
+            "authors": [
+                "Guest"
+            ],
+            "summary": "MSMEs need a digital boost. digital adoption and maturity sector is suboptimal The Financial Express ...",
+            "banner_image": "https://www.financialexpress.com/wp-content/uploads/2024/02/Vodafone-Idea-Bloomberg-1.jpg",
+            "source": "The Financial Express",
+            "category_within_source": "n/a",
+            "source_domain": "www.financialexpress.com",
+            "topics": [
+                {
+                    "topic": "Life Sciences",
+                    "relevance_score": "0.5"
+                },
+                {
+                    "topic": "Technology",
+                    "relevance_score": "0.5"
+                }
+            ],
+            "overall_sentiment_score": 0.334865,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "EYE",
+                    "relevance_score": "0.077593",
+                    "ticker_sentiment_score": "0.10538",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "VOD",
+                    "relevance_score": "0.154455",
+                    "ticker_sentiment_score": "0.091475",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Bitcoin bulls aim for $55K+ as short-term seller supply dwindles",
+            "url": "https://cointelegraph.com/news/bitcoin-price-poised-for-55k-as-short-term-seller-supply-dwindles",
+            "time_published": "20240214T193000",
+            "authors": [
+                "Marcel Pechman"
+            ],
+            "summary": "Large financial institutions continue adding Bitcoin to their coffers, even after BTC price rallied 21% in the past week.",
+            "banner_image": "https://images.cointelegraph.com/cdn-cgi/image/format=auto,onerror=redirect,quality=90,width=1200/https://s3.cointelegraph.com/uploads/2024-02/74fb3a46-017d-4741-b216-878d6f6480c4.jpg",
+            "source": "Cointelegraph",
+            "category_within_source": "n/a",
+            "source_domain": "cointelegraph.com",
+            "topics": [
+                {
+                    "topic": "Technology",
+                    "relevance_score": "0.5"
+                },
+                {
+                    "topic": "Finance",
+                    "relevance_score": "0.5"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.9545"
+                }
+            ],
+            "overall_sentiment_score": 0.15177,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "BLK",
+                    "relevance_score": "0.06211",
+                    "ticker_sentiment_score": "0.163508",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "GOOG",
+                    "relevance_score": "0.06211",
+                    "ticker_sentiment_score": "-0.247311",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.814721",
+                    "ticker_sentiment_score": "0.26261",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Alation Launches Data Culture Maturity Assessment to Measure the True Value of Data Initiatives",
+            "url": "https://www.benzinga.com/pressreleases/24/02/g37136261/alation-launches-data-culture-maturity-assessment-to-measure-the-true-value-of-data-initiatives",
+            "time_published": "20240214T192719",
+            "authors": [
+                "Globe Newswire"
+            ],
+            "summary": "REDWOOD CITY, Calif., Feb. 14, 2024 ( GLOBE NEWSWIRE ) -- Alation, Inc., the data intelligence company, today announced the Data Culture Maturity Assessment to help organizations measure the value of their data culture.",
+            "banner_image": "https://www.benzinga.com/next-assets/images/schema-image-default.png",
+            "source": "Benzinga",
+            "category_within_source": "General",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Energy & Transportation",
+                    "relevance_score": "0.5"
+                },
+                {
+                    "topic": "Life Sciences",
+                    "relevance_score": "0.5"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.360215"
+                }
+            ],
+            "overall_sentiment_score": 0.427459,
+            "overall_sentiment_label": "Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "DSSMY",
+                    "relevance_score": "0.054236",
+                    "ticker_sentiment_score": "0.177034",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "KGC",
+                    "relevance_score": "0.054236",
+                    "ticker_sentiment_score": "0.265943",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "PFE",
+                    "relevance_score": "0.054236",
+                    "ticker_sentiment_score": "0.214996",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Delta flight from Amsterdam to Detroit turned around after maggots fall on passengers: report",
+            "url": "https://www.foxbusiness.com/fox-news-travel/delta-flight-amsterdam-detroit-turned-maggots-fall-passengers-report",
+            "time_published": "20240214T192600",
+            "authors": [
+                "Pilar Arias"
+            ],
+            "summary": "An hour into a Delta flight from Amsterdam to Detroit, the plane had to turn around after maggots reportedly fell from an overhead cabin onto economy passengers.",
+            "banner_image": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/854081161001/04690e0a-9863-4514-ab71-f04280e7e91d/137cf827-a4b9-434f-884c-029802905df2/1280x720/match/image.jpg",
+            "source": "Fox Business News",
+            "category_within_source": "n/a",
+            "source_domain": "www.foxbusiness.com",
+            "topics": [
+                {
+                    "topic": "Energy & Transportation",
+                    "relevance_score": "1.0"
+                }
+            ],
+            "overall_sentiment_score": -0.185097,
+            "overall_sentiment_label": "Somewhat-Bearish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "DAL",
+                    "relevance_score": "0.135347",
+                    "ticker_sentiment_score": "-0.052586",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Berman Tabacco Announces Investigation of QuidelOrtho Corporation  ( QDEL )  for Potential Securities Law Violations - QuidelOrtho  ( NASDAQ:QDEL ) ",
+            "url": "https://www.benzinga.com/pressreleases/24/02/g37136201/berman-tabacco-announces-investigation-of-quidelortho-corporation-qdel-for-potential-securities-la",
+            "time_published": "20240214T192400",
+            "authors": [
+                "Globe Newswire"
+            ],
+            "summary": "BOSTON, Feb. 14, 2024 ( GLOBE NEWSWIRE ) -- Berman Tabacco, a national law firm representing investors, is investigating potential securities law violations by QuidelOrtho Corporation ( \"QuidelOrtho\" or the \"Company\" ) QDEL.",
+            "banner_image": "https://www.benzinga.com/next-assets/images/schema-image-default.png",
+            "source": "Benzinga",
+            "category_within_source": "News",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Life Sciences",
+                    "relevance_score": "0.5"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.161647"
+                },
+                {
+                    "topic": "Manufacturing",
+                    "relevance_score": "0.5"
+                },
+                {
+                    "topic": "Earnings",
+                    "relevance_score": "0.714479"
+                }
+            ],
+            "overall_sentiment_score": 0.141213,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "DJCO",
+                    "relevance_score": "0.179788",
+                    "ticker_sentiment_score": "0.169625",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "QDEL",
+                    "relevance_score": "0.636698",
+                    "ticker_sentiment_score": "0.152799",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Why Crypto Mining Stocks Jumped Today",
+            "url": "https://www.fool.com/investing/2024/02/14/why-crypto-mining-stocks-jumped-today/",
+            "time_published": "20240214T192142",
+            "authors": [
+                "Travis Hoium"
+            ],
+            "summary": "Today's rise in Bitcoin is pushing mining stocks sharply higher.",
+            "banner_image": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F765332%2Fchips-with-oil-rig-digital-image-on-top.jpg&op=resize&w=700",
+            "source": "Motley Fool",
+            "category_within_source": "n/a",
+            "source_domain": "www.fool.com",
+            "topics": [
+                {
+                    "topic": "Life Sciences",
+                    "relevance_score": "0.333333"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.650727"
+                },
+                {
+                    "topic": "Real Estate & Construction",
+                    "relevance_score": "0.333333"
+                },
+                {
+                    "topic": "Technology",
+                    "relevance_score": "0.333333"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.158519"
+                }
+            ],
+            "overall_sentiment_score": 0.228585,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "MARA",
+                    "relevance_score": "0.172097",
+                    "ticker_sentiment_score": "0.216314",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "RIOT",
+                    "relevance_score": "0.172097",
+                    "ticker_sentiment_score": "0.216314",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "CLSK",
+                    "relevance_score": "0.172097",
+                    "ticker_sentiment_score": "0.216314",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "HUT",
+                    "relevance_score": "0.172097",
+                    "ticker_sentiment_score": "0.216314",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "CRYPTO:BTC",
+                    "relevance_score": "0.807885",
+                    "ticker_sentiment_score": "0.410675",
+                    "ticker_sentiment_label": "Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Crime wave a $4.2 bn headache for UK retailers amid 50% rise in violence | World News",
+            "url": "https://www.business-standard.com/world-news/crime-wave-is-a-4-2-bn-headache-for-uk-retailers-50-rise-in-violence-124021500009_1.html",
+            "time_published": "20240214T191936",
+            "authors": [
+                "Bloomberg"
+            ],
+            "summary": "Crime wave a $4.2 bn headache for UK retailers amid 50% rise in violence Business Standard ...",
+            "banner_image": "https://bsmedia.business-standard.com/_media/bs/img/article/2024-02/15/full/1707937241-2043.jpg?im=FitAndFill=(826,465)",
+            "source": "Business Standard",
+            "category_within_source": "GoogleRSS",
+            "source_domain": "www.business-standard.com",
+            "topics": [
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.158519"
+                }
+            ],
+            "overall_sentiment_score": -0.288818,
+            "overall_sentiment_label": "Somewhat-Bearish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "TSCDF",
+                    "relevance_score": "0.139265",
+                    "ticker_sentiment_score": "0.130923",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Researchers pair medical devices with blockchain to defend against cyberattacks",
+            "url": "https://cointelegraph.com/news/researchers-pair-medical-devices-blockchain-defend-against-cyberattacks",
+            "time_published": "20240214T191834",
+            "authors": [
+                "Tristan Greene"
+            ],
+            "summary": "Digital security has become a paramount concern for the medical industry in the wake of the 2017 \"WannaCry\" cyberattack.",
+            "banner_image": "https://images.cointelegraph.com/cdn-cgi/image/format=auto,onerror=redirect,quality=90,width=1200/https://s3.cointelegraph.com/uploads/2024-02/81a6bb78-eeb1-48da-974c-5fab1db456b4.jpg",
+            "source": "Cointelegraph",
+            "category_within_source": "n/a",
+            "source_domain": "cointelegraph.com",
+            "topics": [
+                {
+                    "topic": "Technology",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.682689"
+                }
+            ],
+            "overall_sentiment_score": 0.287436,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "DTST",
+                    "relevance_score": "0.130926",
+                    "ticker_sentiment_score": "0.100072",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Steven Madden To Gain From Brand Value Despite Shifting Trends - Analyst Highlights Almost Famous Acquisition - Steven Madden  ( NASDAQ:SHOO ) ",
+            "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/02/37136072/steven-madden-to-gain-from-brand-value-despite-shifting-trends-analyst-highlights-a",
+            "time_published": "20240214T191826",
+            "authors": [
+                "Nabaparna Bhattacharya"
+            ],
+            "summary": "Piper Sandler analyst Abbie Zvejnieks initiated coverage on Steven Madden, Ltd. SHOO with a Neutral rating and a price target of $45. Per the analyst, the trend-agnostic speed model is a key differentiator, and strong brand recognition boosts the growth of the apparel and accessories business, ...",
+            "banner_image": "https://cdn.benzinga.com/files/images/story/2024/Steven-Madden--SHOO.png?width=1200&height=800&fit=crop",
+            "source": "Benzinga",
+            "category_within_source": "Trading",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Earnings",
+                    "relevance_score": "0.310843"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.108179"
+                },
+                {
+                    "topic": "Manufacturing",
+                    "relevance_score": "1.0"
+                }
+            ],
+            "overall_sentiment_score": 0.215986,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "SHOO",
+                    "relevance_score": "0.456884",
+                    "ticker_sentiment_score": "0.171797",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Medical groups raise concerns around India-EFTA after leaked documents | News",
+            "url": "https://www.business-standard.com/industry/news/medical-groups-raise-concerns-around-india-efta-after-leaked-documents-124021401591_1.html",
+            "time_published": "20240214T191703",
+            "authors": [
+                "Anjali Singh"
+            ],
+            "summary": "Medical groups raise concerns around India-EFTA after leaked documents Business Standard ...",
+            "banner_image": "https://bsmedia.business-standard.com/_media/bs/img/article/2023-07/12/full/1689175810-294.jpg?im=FitAndFill=(826,465)",
+            "source": "Business Standard",
+            "category_within_source": "GoogleRSS",
+            "source_domain": "www.business-standard.com",
+            "topics": [
+                {
+                    "topic": "Economy - Fiscal",
+                    "relevance_score": "0.158519"
+                }
+            ],
+            "overall_sentiment_score": 0.048581,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": []
+        },
+        {
+            "title": "How Is The Market Feeling About Coca-Cola Consolidated? - Coca-Cola Consolidated  ( NASDAQ:COKE ) ",
+            "url": "https://www.benzinga.com/insights/short-sellers/24/02/37135989/how-is-the-market-feeling-about-coca-cola-consolidated",
+            "time_published": "20240214T191524",
+            "authors": [
+                "Benzinga Insights"
+            ],
+            "summary": "Coca-Cola Consolidated's COKE short percent of float has risen 4.79% since its last report. The company recently reported that it has 102 thousand shares sold short, which is 1.75% of all regular shares that are available for trading.",
+            "banner_image": "https://cdn.benzinga.com/files/images/story/2023/movers_image_0.jpeg?width=1200&height=800&fit=crop",
+            "source": "Benzinga",
+            "category_within_source": "Trading",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.365926"
+                },
+                {
+                    "topic": "Manufacturing",
+                    "relevance_score": "1.0"
+                }
+            ],
+            "overall_sentiment_score": 0.267332,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "KO",
+                    "relevance_score": "0.327366",
+                    "ticker_sentiment_score": "0.275094",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "COKE",
+                    "relevance_score": "0.221819",
+                    "ticker_sentiment_score": "0.155473",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": " ( ALT )  - Analyzing Altimmune's Short Interest - Altimmune  ( NASDAQ:ALT ) ",
+            "url": "https://www.benzinga.com/insights/short-sellers/24/02/37135985/alt-analyzing-altimmunes-short-interest",
+            "time_published": "20240214T191519",
+            "authors": [
+                "Benzinga Insights"
+            ],
+            "summary": "Altimmune's ALT short percent of float has fallen 6.1% since its last report. The company recently reported that it has 10.01 million shares sold short, which is 18.78% of all regular shares that are available for trading. Based on its trading volume, it would take traders 1.82 days to cover ...",
+            "banner_image": "https://cdn.benzinga.com/files/images/story/2023/movers_image_5.jpeg?width=1200&height=800&fit=crop",
+            "source": "Benzinga",
+            "category_within_source": "Trading",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Life Sciences",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.365926"
+                }
+            ],
+            "overall_sentiment_score": 0.24389,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "ALT",
+                    "relevance_score": "0.224903",
+                    "ticker_sentiment_score": "0.085754",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Agree Realty  ( ADC )  Q4 2023 Earnings Call Transcript",
+            "url": "https://www.fool.com/earnings/call-transcripts/2024/02/14/agree-realty-adc-q4-2023-earnings-call-transcript/",
+            "time_published": "20240214T191516",
+            "authors": [
+                "Motley Fool Transcribing"
+            ],
+            "summary": "ADC earnings call for the period ending December 31, 2023.",
+            "banner_image": "https://g.foolcdn.com/misc-assets/fool-transcripts-logo.png",
+            "source": "Motley Fool",
+            "category_within_source": "n/a",
+            "source_domain": "www.fool.com",
+            "topics": [
+                {
+                    "topic": "Finance",
+                    "relevance_score": "0.333333"
+                },
+                {
+                    "topic": "Economy - Monetary",
+                    "relevance_score": "0.928139"
+                },
+                {
+                    "topic": "Retail & Wholesale",
+                    "relevance_score": "0.333333"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Earnings",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Mergers & Acquisitions",
+                    "relevance_score": "0.87644"
+                },
+                {
+                    "topic": "Real Estate & Construction",
+                    "relevance_score": "0.333333"
+                }
+            ],
+            "overall_sentiment_score": 0.176752,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "ADC",
+                    "relevance_score": "0.014904",
+                    "ticker_sentiment_score": "0.100041",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "BIG",
+                    "relevance_score": "0.034766",
+                    "ticker_sentiment_score": "0.069165",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CVS",
+                    "relevance_score": "0.004968",
+                    "ticker_sentiment_score": "0.057621",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "C",
+                    "relevance_score": "0.004968",
+                    "ticker_sentiment_score": "0.140624",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "BAC",
+                    "relevance_score": "0.004968",
+                    "ticker_sentiment_score": "0.140624",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "MS",
+                    "relevance_score": "0.004968",
+                    "ticker_sentiment_score": "0.140624",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "TSCO",
+                    "relevance_score": "0.004968",
+                    "ticker_sentiment_score": "0.0",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FIVE",
+                    "relevance_score": "0.004968",
+                    "ticker_sentiment_score": "0.108711",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "SBUX",
+                    "relevance_score": "0.004968",
+                    "ticker_sentiment_score": "0.072089",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "WFC",
+                    "relevance_score": "0.004968",
+                    "ticker_sentiment_score": "0.140624",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "AZO",
+                    "relevance_score": "0.004968",
+                    "ticker_sentiment_score": "0.0",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "HD",
+                    "relevance_score": "0.004968",
+                    "ticker_sentiment_score": "0.108711",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "WMT",
+                    "relevance_score": "0.024837",
+                    "ticker_sentiment_score": "0.031225",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": " ( ZTS )  - Analyzing Zoetis's Short Interest - Zoetis  ( NYSE:ZTS ) ",
+            "url": "https://www.benzinga.com/insights/short-sellers/24/02/37135981/zts-analyzing-zoetiss-short-interest",
+            "time_published": "20240214T191513",
+            "authors": [
+                "Benzinga Insights"
+            ],
+            "summary": "Zoetis's ZTS short percent of float has risen 6.67% since its last report. The company recently reported that it has 2.96 million shares sold short, which is 0.64% of all regular shares that are available for trading. Based on its trading volume, it would take traders 1.41 days to cover their ...",
+            "banner_image": "https://cdn.benzinga.com/files/images/story/2023/movers_image_18.jpeg?width=1200&height=800&fit=crop",
+            "source": "Benzinga",
+            "category_within_source": "Trading",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Life Sciences",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.365926"
+                }
+            ],
+            "overall_sentiment_score": 0.267375,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "ZTS",
+                    "relevance_score": "0.224903",
+                    "ticker_sentiment_score": "0.158881",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Tech Stock News Bite - Uber  ( NYSE: UBER )  Announces Inaugural $7 Billion Share Repurchase Authorization",
+            "url": "https://www.investorideas.com/news/2024/technology/02141StockBites-UBER.asp",
+            "time_published": "20240214T191506",
+            "authors": [],
+            "summary": "February 14, 2024 ( Investorideas.com Newswire ) Investorideas.com ( www.investorideas.com ) Tech/Ride Share Stock News Bite - Uber Technologies, Inc. ( NYSE: UBER ) announced that its Board of Directors has authorized the repurchase of up to $7 billion of the company's common stock.",
+            "banner_image": null,
+            "source": "Investor Ideas",
+            "category_within_source": "n/a",
+            "source_domain": "www.investorideas.com",
+            "topics": [
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.99393"
+                }
+            ],
+            "overall_sentiment_score": 0.319139,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "UBER",
+                    "relevance_score": "0.371523",
+                    "ticker_sentiment_score": "0.10607",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Elon Musk's Starlink internet service is coming to a Gaza hospital | Business",
+            "url": "https://www.cnn.com/2024/02/14/tech/starlink-gaza/index.html",
+            "time_published": "20240214T191200",
+            "authors": [],
+            "summary": "Elon Musk's Starlink internet service is coming to a Gaza hospital ...",
+            "banner_image": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-1636560226.jpg?c=16x9&q=w_800,c_fill",
+            "source": "CNN",
+            "category_within_source": "Economy",
+            "source_domain": "www.cnn.com",
+            "topics": [],
+            "overall_sentiment_score": 0.002397,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "WBD",
+                    "relevance_score": "0.061473",
+                    "ticker_sentiment_score": "0.0",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "What Is Pixels? Inside the Ronin Farming Game and Ethereum Token Airdrop",
+            "url": "https://decrypt.co/resources/pixels-ronin-farming-game-airdrop-ethereum",
+            "time_published": "20240214T191128",
+            "authors": [
+                "Ashley Duncan",
+                "Andrew Hayward"
+            ],
+            "summary": "Pixels has quickly become one of the hottest games in crypto, thanks in part to the PIXEL token launch. Here's what you need to know.",
+            "banner_image": "https://cdn.decrypt.co/resize/1024/height/512/wp-content/uploads/2019/03/gaming_litepaper-gID_7-pID_5.png",
+            "source": "Decrypt.co",
+            "category_within_source": "n/a",
+            "source_domain": "decrypt.co",
+            "topics": [
+                {
+                    "topic": "Blockchain",
+                    "relevance_score": "0.838487"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.158519"
+                },
+                {
+                    "topic": "Economy - Macro",
+                    "relevance_score": "0.158519"
+                }
+            ],
+            "overall_sentiment_score": 0.260216,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "CRYPTO:ETH",
+                    "relevance_score": "0.111488",
+                    "ticker_sentiment_score": "0.077981",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRYPTO:BNB",
+                    "relevance_score": "0.111488",
+                    "ticker_sentiment_score": "0.085708",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Why Greenwich Lifesciences  ( GLSI )  Stock Is Skyrocketing - Greenwich LifeSciences  ( NASDAQ:GLSI ) ",
+            "url": "https://www.benzinga.com/news/24/02/37135859/why-greenwich-lifesciences-glsi-stock-is-skyrocketing",
+            "time_published": "20240214T190940",
+            "authors": [
+                "Henry Khederian"
+            ],
+            "summary": "Greenwich Lifesciences Inc GLSI shares are trading higher by 30.6% to $10.85 Wednesday afternoon after the company provided an update on the Phase III clinical trial, Flamingo-01. The Data Safety Monitoring Board recommended continuing the trial without modifications due to no serious adverse ...",
+            "banner_image": "https://cdn.benzinga.com/files/images/story/2024/man-2425121.jpeg?width=1200&height=800&fit=crop",
+            "source": "Benzinga",
+            "category_within_source": "News",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Life Sciences",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.316726"
+                }
+            ],
+            "overall_sentiment_score": 0.302713,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "GLSI",
+                    "relevance_score": "0.511256",
+                    "ticker_sentiment_score": "0.430048",
+                    "ticker_sentiment_label": "Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Holland America Line Enhances Alaska Cruisetours with McKinley Chalet Resort Room Upgrades and New Gold Rush Experience - Carnival  ( NYSE:CUK ) , Carnival  ( NYSE:CCL ) ",
+            "url": "https://www.benzinga.com/pressreleases/24/02/n37135858/holland-america-line-enhances-alaska-cruisetours-with-mckinley-chalet-resort-room-upgrades-and-new",
+            "time_published": "20240214T190900",
+            "authors": [
+                "PRNewswire"
+            ],
+            "summary": "Twenty-eight rooms at the hotel will be upgraded to Denali Suite category by adding balconies; new included 'Klondike Gold Tour' tour explores Klondike Gold Rush history",
+            "banner_image": "https://www.benzinga.com/next-assets/images/schema-image-default.png",
+            "source": "Benzinga",
+            "category_within_source": "General",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Technology",
+                    "relevance_score": "1.0"
+                }
+            ],
+            "overall_sentiment_score": 0.273622,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "META",
+                    "relevance_score": "0.034381",
+                    "ticker_sentiment_score": "0.0",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Genmab Files Annual Report with the U.S. Securities and Exchange Commission",
+            "url": "https://www.globenewswire.com/news-release/2024/02/14/2829403/0/en/Genmab-Files-Annual-Report-with-the-U-S-Securities-and-Exchange-Commission.html",
+            "time_published": "20240214T190900",
+            "authors": [
+                "Genmab A/S"
+            ],
+            "summary": "Media Release COPENHAGEN, Denmark. February ...",
+            "banner_image": "https://ml-eu.globenewswire.com/Resource/Download/368a5dab-dfc5-4e1d-bfa6-2af5e5216fce",
+            "source": "GlobeNewswire",
+            "category_within_source": "n/a",
+            "source_domain": "www.globenewswire.com",
+            "topics": [
+                {
+                    "topic": "Life Sciences",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.310843"
+                }
+            ],
+            "overall_sentiment_score": 0.084224,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "GMAB",
+                    "relevance_score": "0.700607",
+                    "ticker_sentiment_score": "0.133871",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Holland America Line Enhances Alaska Cruisetours with McKinley Chalet Resort Room Upgrades and New Gold Rush Experience - Carnival  ( NYSE:CUK ) , Carnival  ( NYSE:CCL ) ",
+            "url": "https://www.benzinga.com/pressreleases/24/02/n37135857/holland-america-line-enhances-alaska-cruisetours-with-mckinley-chalet-resort-room-upgrades-and-new",
+            "time_published": "20240214T190900",
+            "authors": [
+                "PRNewswire"
+            ],
+            "summary": "Twenty-eight rooms at the hotel will be upgraded to Denali Suite category by adding balconies; new included 'Klondike Gold Tour' tour explores Klondike Gold Rush history",
+            "banner_image": "https://www.benzinga.com/next-assets/images/schema-image-default.png",
+            "source": "Benzinga",
+            "category_within_source": "General",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Technology",
+                    "relevance_score": "1.0"
+                }
+            ],
+            "overall_sentiment_score": 0.273622,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "META",
+                    "relevance_score": "0.034381",
+                    "ticker_sentiment_score": "0.0",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Investigation Into LifeStance Health Group, Inc.  ( LFST )  Announced by Holzer & Holzer, LLC - LifeStance Health Gr  ( NASDAQ:LFST ) ",
+            "url": "https://www.benzinga.com/pressreleases/24/02/g37135795/investigation-into-lifestance-health-group-inc-lfst-announced-by-holzer-holzer-llc",
+            "time_published": "20240214T190716",
+            "authors": [
+                "Globe Newswire"
+            ],
+            "summary": "ATLANTA, Feb. 14, 2024 ( GLOBE NEWSWIRE ) -- Holzer & Holzer, LLC is investigating whether LifeStance Health Group, Inc. ( \"LifeStance\" or the \"Company\" ) LFST complied with federal securities laws.",
+            "banner_image": "https://www.benzinga.com/next-assets/images/schema-image-default.png",
+            "source": "Benzinga",
+            "category_within_source": "News",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Life Sciences",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.796627"
+                }
+            ],
+            "overall_sentiment_score": 0.021675,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "LFST",
+                    "relevance_score": "0.331765",
+                    "ticker_sentiment_score": "0.083402",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "LAZ PARKING WINS CONTRACT TO MANAGE VALET PARKING SERVICES AT MAJOR ACADEMIC MEDICAL CENTER",
+            "url": "https://www.benzinga.com/pressreleases/24/02/n37135808/laz-parking-wins-contract-to-manage-valet-parking-services-at-major-academic-medical-center",
+            "time_published": "20240214T190700",
+            "authors": [
+                "PRNewswire"
+            ],
+            "summary": "LAZ will manage parking services at six valet kiosks across the hospital's campus",
+            "banner_image": "https://www.benzinga.com/next-assets/images/schema-image-default.png",
+            "source": "Benzinga",
+            "category_within_source": "News",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Life Sciences",
+                    "relevance_score": "1.0"
+                }
+            ],
+            "overall_sentiment_score": 0.319935,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "HCSG",
+                    "relevance_score": "0.274012",
+                    "ticker_sentiment_score": "0.295381",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "SentinelOne's Stock Surge Echoes Strong Market Potential: Analyst Anticipates Competitive Edge And Revenue Reacceleration - CrowdStrike Holdings  ( NASDAQ:CRWD ) , Fortinet  ( NASDAQ:FTNT ) ",
+            "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/02/37135787/sentinelones-stock-surge-echoes-strong-market-potential-analyst-anticipates-competi",
+            "time_published": "20240214T190647",
+            "authors": [
+                "Anusuya Lahiri"
+            ],
+            "summary": "BofA Securities analyst Tal Liani upgraded SentinelOne Inc S from Neutral to Buy and raised the price target from $26.50 to $35. The stock gained over 4% on Wednesday.",
+            "banner_image": "https://cdn.benzinga.com/files/images/story/2024/SentinelOne.png?width=1200&height=800&fit=crop",
+            "source": "Benzinga",
+            "category_within_source": "Trading",
+            "source_domain": "www.benzinga.com",
+            "topics": [
+                {
+                    "topic": "Earnings",
+                    "relevance_score": "0.796627"
+                },
+                {
+                    "topic": "Technology",
+                    "relevance_score": "1.0"
+                },
+                {
+                    "topic": "Financial Markets",
+                    "relevance_score": "0.684621"
+                }
+            ],
+            "overall_sentiment_score": 0.324822,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "MSFT",
+                    "relevance_score": "0.219809",
+                    "ticker_sentiment_score": "-0.288308",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "ZS",
+                    "relevance_score": "0.219809",
+                    "ticker_sentiment_score": "0.398162",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "CRWD",
+                    "relevance_score": "0.324495",
+                    "ticker_sentiment_score": "0.208995",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "S",
+                    "relevance_score": "0.423251",
+                    "ticker_sentiment_score": "0.486026",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "FTNT",
+                    "relevance_score": "0.219809",
+                    "ticker_sentiment_score": "-0.288308",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "PANW",
+                    "relevance_score": "0.324495",
+                    "ticker_sentiment_score": "0.208995",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        }
+    ]
+}
