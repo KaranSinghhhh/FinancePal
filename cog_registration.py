@@ -9,9 +9,9 @@ COGS = [
     "cogs.UI",
     "cogs.StoringData",
     "cogs.Stock",
-    "cogs.MarketNews",
     "cogs.CompanyInfo",
     "cogs.IncomeStatement",
     "cogs.CashFlow",
+    "cogs.MarketNews"
     
 ]

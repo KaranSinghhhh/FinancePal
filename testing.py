@@ -23,8 +23,22 @@ else:
 news_feed = data['feed']
 for feed in news_feed:
     feed_title = feed['title']
-    print(feed_title)
     
+    
+    feed_time_published = feed['time_published']
+    date_part = feed_time_published.split('T')[0]
+    print(date_part)
+            
+    year_part = date_part[:4]
+    month_part = date_part[4:6]
+    day_part = date_part[6:]
+    
+    formatted_published_data = f"{year_part}/{month_part}/{day_part}"
+    
+   
+        
+    
+
 
  
 '''
