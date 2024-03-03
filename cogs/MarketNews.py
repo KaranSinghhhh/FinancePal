@@ -1,13 +1,11 @@
-
 import requests
 import nextcord
 from nextcord.ext import commands
 from nextcord import Interaction
-from datetime import datetime
 import os
 from dotenv import load_dotenv
 
-#Load environment variable
+# Load environment variable
 load_dotenv()
 
 class MarketNews(commands.Cog):
@@ -22,49 +20,49 @@ class MarketNews(commands.Cog):
             response = requests.get(url)
             data = response.json()     
             
+            if 'feed' in data:  # Check if 'feed' is in the response
+                news_feed = data['feed']
+                news_items = []  # Initialize the list outside the loop
+
+                for feed in news_feed[:8]:  # Process first 8 news items
+                    feed_title = feed['title']
+                    feed_url = feed['url']
+                    feed_time_published = feed['time_published']
+                    date_part = feed_time_published.split('T')[0]
+
+                    year_part = date_part[:4]
+                    month_part = date_part[4:6]
+                    day_part = date_part[6:]
+
+                    formatted_published_date = f"{year_part}-{month_part}-{day_part}"
+                    formatted_information = f"**Title:** {feed_title}\n**URL:** <{feed_url}>\n**Date:** {formatted_published_date}"
+
+                    news_items.append(formatted_information)  # Append to list inside the loop
+
+                return news_items  # Return the list after the loop completes
             
-            news_feed = data['feed']
-            
-            for feed in news_feed:
-                news_items = []
-                
-                feed_title = feed['title']
-            
-                feed_time_published = feed['time_published']
-                date_part = feed_time_published.split('T')[0]
-                
-                year_part = date_part[:4]
-                month_part = date_part[4:6]
-                day_part = date_part[6:]
-                
-                formatted_published_data = f"{year_part}/{month_part}/{day_part}"
-                
-                news_items.append((feed_title, formatted_published_data ))
-                
-                return news_items
-        
         except requests.RequestException as e:
             print(f"Error fetching data: {e}")
             return None
         
-    @nextcord.slash_command(name="market-news", description = "Gets Market News ",  guild_ids=[int(os.getenv('TEST_SERVER_ID'))])
+    @nextcord.slash_command(name="market-news", description="Gets Market News", guild_ids=[int(testServerId)])
     async def stock(self, interaction: Interaction, symbol: str):
         latest_market_news = self.get_news_sentiment(symbol)
         
         try:
             if latest_market_news:
-                embed = nextcord.Embed(title=f"Market News for {symbol}", description="Market News for ticker:", color=0x4dff4d)
+                embed = nextcord.Embed(title=f"Market News for {symbol}", description="Here's the latest market news:", color=0x4dff4d)
                 
-                for title, publish_date in latest_market_news:
-                    embed.add_field(name="Title", value=title , inline=True)
-                    embed.add_field(name="Publish Date", value=publish_date ,  inline=True)
+                for item in latest_market_news:
+                    # Each item is added as a value of a single field
+                    embed.add_field(name="\u200B", value=item, inline=False)  # Use zero-width space for an invisible field name
                 
-                await interaction.user.send(embed=embed)
-                await interaction.response.send_message(f"Stock information sent to your DMs.", ephemeral=False)
+                await interaction.response.send_message(embed=embed, ephemeral=True)
             else:
-                await interaction.response.send_message(f"Failed to retrieve market news for {symbol}")
+                await interaction.response.send_message(f"Failed to retrieve market news for {symbol}", ephemeral=True)
         except Exception as e:
-            await interaction.response.send_message(f"An error occurred: {e}")
+            await interaction.response.send_message(f"An error occurred: {e}", ephemeral=True)
 
 def setup(client):
     client.add_cog(MarketNews(client))
+
