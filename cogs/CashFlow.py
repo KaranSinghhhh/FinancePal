@@ -96,7 +96,6 @@ class CashFlow(commands.Cog):
         bloomberg_url = f"https://www.bloomberg.com/quote/{symbol}:US"
         # Page 1
         embed1 = nextcord.Embed(title=f"{symbol} Cash Flow Statement", url=bloomberg_url, description=f"Fiscal Report Date: {the_cash_flow['fiscalDateEnding']}", color=0x4dff4d)
-        embed1.add_field(name="Reported Currency", value=f"${the_cash_flow.get('reportedCurrency', 'N/A')}", inline=False)
         embed1.add_field(name="Operating Cash Flow", value=f"${the_cash_flow.get('operatingCashFlow', 'N/A')}", inline=False)
         embed1.add_field(name="Payments for Operating Activities", value=f"${the_cash_flow.get('paymentsForOperatingActivities', 'N/A')}", inline=False)
         embed1.add_field(name="Proceeds from Operating Activities", value=f"${the_cash_flow.get('proceedsFromOperatingActivities', 'N/A')}", inline=False)
@@ -106,7 +105,6 @@ class CashFlow(commands.Cog):
         embed1.add_field(name="Capital Expenditures", value=f"{the_cash_flow.get('capitalExpenditures', 'N/A')}", inline=False)
         embed1.add_field(name="Change in Receivables", value=f"${the_cash_flow.get('changeInReceivables', 'N/A')}", inline=False)
         embed1.add_field(name="Change in Inventory", value=f"${the_cash_flow.get('changeInInventory', 'N/A')}", inline=False)
-        embed1.add_field(name="Profit Loss", value=f"${the_cash_flow.get('profitLoss', 'N/A')}", inline=False)
         embed1.add_field(name="Cash Flow from Investment", value=f"${the_cash_flow.get('cashflowFromInvestment', 'N/A')}", inline=False)
         embed1.add_field(name="Cash Flow from Financing", value=f"${the_cash_flow.get('cashflowFromFinancing', 'N/A')}", inline=False)
         
@@ -132,7 +130,6 @@ class CashFlow(commands.Cog):
         embed1.add_field(name="Proceeds from Sale of Treasury Stock", value=f"${the_cash_flow.get('proceedsFromSaleOfTreasuryStock', 'N/A')}", inline=False)
         embed1.add_field(name="Change In Cash and Cash Equivalents", value=f"${the_cash_flow.get('changeInCashAndCashEquivalents', 'N/A')}", inline=False)
         embed1.add_field(name="Change In Exchange Rate", value=f"${the_cash_flow.get('changeInExchangeRate', 'N/A')}", inline=False)
-        embed1.add_field(name="Net Income", value=f"${the_cash_flow.get('netIncome', 'N/A')}", inline=False)
         
         
         if logo_url:
