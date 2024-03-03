@@ -57,7 +57,7 @@ class MarketNews(commands.Cog):
                     # Each item is added as a value of a single field
                     embed.add_field(name="\u200B", value=item, inline=False)  # Use zero-width space for an invisible field name
                 
-                await interaction.response.send_message(embed=embed, ephemeral=True)
+                await interaction.response.send_message(embed=embed, ephemeral=False)
             else:
                 await interaction.response.send_message(f"Failed to retrieve market news for {symbol}", ephemeral=True)
         except Exception as e:
