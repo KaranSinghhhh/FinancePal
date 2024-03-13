@@ -2,10 +2,48 @@ import requests
 import json
 import os
 
+API_KEY = os.getenv('ALPHA_VANTAGE_API_KEY') 
 
+url = f'https://www.alphavantage.co/query?function=TOP_GAINERS_LOSERS&apikey={API_KEY}'
+response = requests.get(url)
+data = response.json()
+
+print(data)
+
+if data:
+    with open('sample_top_gainers_loers.json', 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent= 4)
+        print("Data written to sample_top_gainers_loers.json")
+else:
+    print("NO DATA TO WRITE")
+    
+top_gainers = data["top_gainers"]
+for top_gainer in top_gainers[:5]:
+    ticker = top_gainer["ticker"]
+    print(f"{ticker}\n")
+    
+    print("-----------------------------")
+    
+    price = top_gainer["price"]
+    print(f"{price}\n")
+    
+    print("-----------------------------")
+    
+    change_amount = top_gainer["change_amount"]
+    print(f"{change_amount}\n")
+    
+    print("-----------------------------")
+    
+    change_percentage = top_gainer["change_percentage"]
+    strip_percentage = change_percentage.strip("%")
+    print(f"{strip_percentage}\n")
+    
+    
+
+'''
 API_KEY = os.getenv('ALPHA_VANTAGE_API_KEY') 
 symbol = 'AAPL'
-# replace the "demo" apikey below with your own key from https://www.alphavantage.co/support/#api-key
+
 url = f'https://www.alphavantage.co/query?function=NEWS_SENTIMENT&tickers={symbol}&apikey={API_KEY}'
 r = requests.get(url)
 data = r.json()
@@ -19,6 +57,7 @@ if data:
         print("Data written to sample_news_sentiment_three.json")
 else:
     print("No data to write.")
+'''
 
 '''
 news_feed = data['feed']
