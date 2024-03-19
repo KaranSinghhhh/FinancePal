@@ -36,8 +36,17 @@ for top_gainer in top_gainers[:5]:
     
     change_percentage = top_gainer["change_percentage"]
     strip_percentage = change_percentage.strip("%")
-    print(f"{strip_percentage}\n")
+    float_strip_percentage = float(strip_percentage)
     
+    print(f"{float_strip_percentage:.2f}%\n")
+    
+    print("------------------------------")
+    
+    volume = top_gainer["volume"]
+    print(f"{volume}")
+    
+    top_5_gainers = f"Ticker: {ticker}\nPrice: {price}\nChange Amount: {change_amount}\nChange_percentage: {change_percentage}\nVolume: {volume}"
+    print(top_5_gainers)
     
 
 '''
