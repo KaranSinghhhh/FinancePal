@@ -12,6 +12,6 @@ COGS = [
     "cogs.CompanyInfo",
     "cogs.IncomeStatement",
     "cogs.CashFlow",
-    "cogs.MarketNews"
-    
+    "cogs.MarketNews",
+    "cogs.TopGainersTopLosers",
 ]
